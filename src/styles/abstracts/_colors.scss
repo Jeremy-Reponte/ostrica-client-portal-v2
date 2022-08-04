@@ -1,0 +1,60 @@
+$primary-color: #51514e;
+$secondary-color: #ff6a00;
+$ostrica-color-1: #27692c;
+$ostrica-color-2: #d9edf7;
+$ostrica-color-3: #d9d9d9;
+$ostrica-color-4: #91cc13;
+$white-color: #ffffff;
+$black-color: #000000;
+
+//background
+.primary-bg {
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+  color: $white-color !important;
+}
+
+.white-bg {
+  background-color: $white-color !important;
+}
+
+.secondary-background {
+  background-color: $secondary-color !important;
+  border-color: $secondary-color !important;
+  color: $white-color;
+}
+
+.green-background {
+  background-color: $ostrica-color-1 !important;
+  border-color: $ostrica-color-1 !important;
+  color: $white-color;
+}
+
+.skyblue-background {
+  background-color: $ostrica-color-2 !important;
+  border-color: $ostrica-color-2 !important;
+}
+
+.ostrica-color-4-background {
+  background-color: $ostrica-color-4 !important;
+  border-color: $ostrica-color-4 !important;
+  color: $primary-color !important;
+}
+
+.alert-default {
+  background-color: #ebebeb;
+  border-color: #e3e3e3;
+  color: #6c6c6c;
+}
+
+//fonts
+.primary-font {
+  color: $primary-color !important;
+}
+
+.secondary-font {
+  color: $secondary-color !important;
+  .link:hover {
+    border-bottom: 1px solid $secondary-color;
+  }
+}

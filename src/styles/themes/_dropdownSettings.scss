@@ -1,0 +1,36 @@
+.action {
+  .menu {
+    position: absolute;
+    top: -15px !important;
+    right: 15px !important;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    border-radius: 5px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    .ant-card-body{
+        padding: 10px 24px 10px 0;
+    }
+  }
+
+  .menu.active {
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .menu::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+}

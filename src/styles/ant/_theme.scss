@@ -1,0 +1,22 @@
+.ant-layout {
+  .ant-layout-content {
+    min-height: 811px !important;
+  }
+}
+
+.anticon {
+  vertical-align: 0.1em !important;
+}
+
+#components-layout .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: $primary-color;
+}
+
+.ant-row-rtl #components-layout .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}

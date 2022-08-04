@@ -1,0 +1,22 @@
+.nieuws-container {
+  .ant-collapse-header {
+    background-color: $ostrica-color-3;
+    .ant-collapse-expand-icon,
+    .ant-collapse-header-text {
+      color: $primary-color;
+    }
+  }
+
+  .ant-collapse-item-active {
+    .ant-collapse-header {
+      background-color: $secondary-color;
+      .ant-collapse-expand-icon,
+      .ant-collapse-header-text {
+        color: $white-color;
+      }
+    }
+  }
+  .ant-collapse-content {
+    border: 1px solid $ostrica-color-3;
+  }
+}
