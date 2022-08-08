@@ -4,7 +4,7 @@ $secondary-color: #ff6a00;
 .site-header-background {
   background: #fff !important;
   z-index: 2 !important;
-  border-bottom: 2px solid rgb(15 23 42/.1);
+  border-bottom: 2px solid rgb(15 23 42/0.1);
 
   .trigger {
     font-size: 22px !important;
@@ -36,16 +36,22 @@ $secondary-color: #ff6a00;
   .side-nav-menu {
     margin-top: 50px;
   }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    display: none;
+  }
 }
 
-.opened {
-  margin: 40px 16px 24px 220px !important;
-  padding: 24px !important;
-}
-
-.closed {
-  margin: 40px 16px 24px 100px !important;
-  padding: 24px !important;
+@media only screen and (min-width: 769px) {
+  .opened {
+    margin: 40px 16px 24px 220px !important;
+    padding: 24px !important;
+  }
+  
+  .closed {
+    margin: 40px 16px 24px 100px !important;
+    padding: 24px !important;
+  }
 }
 
 .site-layout-background {

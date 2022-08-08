@@ -36,10 +36,10 @@ const { Title } = Typography;
 export const Home: FC = () => {
     return (
         <div className='home-container'>
-            <Row>
-                <Col span={13} className='pr-2'>
-                    <Row>
-                        <Col span={24} className='pb-4' data-aos="fade-up">
+            <Row gutter={16}>
+                <Col span={13}>
+                    <Row gutter={[16,16]}>
+                        <Col span={24} data-aos="fade-up">
                             <Card bordered={false} className='skyblue-background'>
                                 <h5>2e kwartaalrapportage staat klaar!</h5>
                                 <p>
@@ -60,7 +60,7 @@ export const Home: FC = () => {
                                 </Space>
                             </Card>
                         </Col>
-                        <Col span={24} className='pb-4' data-aos="fade-up">
+                        <Col span={24} data-aos="fade-up">
                             <Card bordered={false}>
                                 <Row>
                                     <Col span={6} className='self-center'>
@@ -80,7 +80,7 @@ export const Home: FC = () => {
 
                             </Card>
                         </Col>
-                        <Col span={24} className='pb-4' data-aos="fade-up">
+                        <Col span={24} data-aos="fade-up">
                             <Card bordered={false}>
                                 <Row>
                                     <Col span={6} className='self-center'>
@@ -96,7 +96,7 @@ export const Home: FC = () => {
                                 </Row>
                             </Card>
                         </Col>
-                        <Col span={24} className='pb-4'>
+                        <Col span={24}>
                             <Collapse
                                 bordered={false}
                                 expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
@@ -107,7 +107,7 @@ export const Home: FC = () => {
                                 </Panel>
                             </Collapse>
                         </Col>
-                        <Col span={24} className='pb-4'>
+                        <Col span={24}>
                             <Card bordered={false}>
                                 <Tabs type="card" data-aos="fade-up">
                                     <TabPane tab="Vermogensontwikkeling historie en verwachting" key="1">
@@ -168,9 +168,9 @@ export const Home: FC = () => {
                         </Col>
                     </Row>
                 </Col>
-                <Col span={11} className='pl-2'>
-                    <Row>
-                        <Col span={24} className='pb-4' data-aos="fade-left">
+                <Col span={11}>
+                    <Row gutter={[16,16]}>
+                        <Col span={24} data-aos="fade-left">
                             <Card bordered={false} className='primary-bg'>
                                 <Space direction="vertical" size="small">
                                     <Title className='font-white' level={5}>Risico- en portefeuilleprofiel</Title>
@@ -182,12 +182,12 @@ export const Home: FC = () => {
                                 </div>
                             </Card>
                         </Col>
-                        <Col span={24} className='pb-4' data-aos="fade-left">
+                        <Col span={24} data-aos="fade-left">
                             <Card title="Asset Allocatie" bordered={false}>
                                 <DummyChart1 />
                             </Card>
                         </Col>
-                        <Col span={24} className='pb-4' data-aos="fade-left">
+                        <Col span={24} data-aos="fade-left">
                             <Card bordered={false}>
                                 <Row>
                                     <Col span={4} className='self-center'>
@@ -202,7 +202,7 @@ export const Home: FC = () => {
                                 </Row>
                             </Card>
                         </Col>
-                        <Col span={24} className='pb-4' data-aos="fade-left">
+                        <Col span={24} data-aos="fade-left">
                             <Card bordered={false}>
                                 <Row>
                                     <Col span={4} className='self-center'>
@@ -217,12 +217,12 @@ export const Home: FC = () => {
                                 </Row>
                             </Card>
                         </Col>
-                        <Col span={24} className='pb-4' data-aos="fade-left">
+                        <Col span={24} data-aos="fade-left">
                             <Card title="Stortingen & Onttrekkingen" bordered={false}>
                                 <DummyTable1 />
                             </Card>
                         </Col>
-                        <Col span={24} className='pb-4' data-aos="fade-left">
+                        <Col span={24} data-aos="fade-left">
                             <Card title="Periodieke stortingen of onttrekkingen" bordered={false}>
                                 <Alert
                                     message="Niet van toepassing."
