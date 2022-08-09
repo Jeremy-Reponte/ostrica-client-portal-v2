@@ -42,18 +42,6 @@ $secondary-color: #ff6a00;
   }
 }
 
-@media only screen and (min-width: 769px) {
-  .opened {
-    margin: 40px 16px 24px 220px !important;
-    padding: 24px !important;
-  }
-  
-  .closed {
-    margin: 40px 16px 24px 100px !important;
-    padding: 24px !important;
-  }
-}
-
 .site-layout-background {
   min-height: 360px;
 }
@@ -94,4 +82,28 @@ $secondary-color: #ff6a00;
 
 .ant-menu-submenu-selected {
   color: $primary-color;
+}
+
+/* For desktop phones: */
+@media only screen and (min-width: 769px) {
+  .main-side-drawer{
+    display: none;
+  }
+  .opened {
+    margin: 40px 16px 24px 220px !important;
+    padding: 24px !important;
+  }
+
+  .closed {
+    margin: 40px 16px 24px 100px !important;
+    padding: 24px !important;
+  }
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  .opened,
+  .closed {
+    padding: 70px 30px !important;
+  }
 }

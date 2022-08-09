@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Layout, Menu, Breadcrumb, Row, Col, Avatar, Modal, Badge, Button, Space, Card } from 'antd';
+import { useMediaQuery } from 'react-responsive';
+import { Layout, Menu, Breadcrumb, Row, Col, Avatar, Modal, Badge, Button, Space, Card, Drawer } from 'antd';
 import type { MenuProps } from 'antd';
 import {
     MenuFoldOutlined,
@@ -135,14 +136,21 @@ const items: MenuProps['items'] = [
 
 const LayoutWrapper = () => {
     const navigate = useNavigate();
-
     const [current, setCurrent] = useState('home');
-    const [collapsed, setCollapsed] = useState(false);
+    const [collapsedNav, setCollapsedNav] = useState(false);
+    const [collapsedDrawer, setCollapsedDrawer] = useState(false);
     const [isMenuActive, setIsMenuActive] = useState<boolean>(false);
+
+    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 769px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
     const onClick: MenuProps['onClick'] = e => {
         console.log('click ', e);
         setCurrent(e.key);
+    };
+
+    const onClose = () => {
+        setCollapsedDrawer(false);
     };
 
     useEffect(() => {
@@ -166,9 +174,9 @@ const LayoutWrapper = () => {
                                 className="site-header-background"
                                 style={{ position: 'fixed', zIndex: 1, width: '100%', padding: 0 }}
                             >
-                                {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
+                                {React.createElement(collapsedNav || collapsedDrawer ? MenuUnfoldOutlined : MenuFoldOutlined, {
                                     className: 'trigger',
-                                    onClick: () => setCollapsed(!collapsed),
+                                    onClick: () => isDesktopOrLaptop ? setCollapsedNav(!collapsedNav) : setCollapsedDrawer(!collapsedDrawer),
                                 })}
                                 <Row>
                                     <Col span={12}>
@@ -203,7 +211,7 @@ const LayoutWrapper = () => {
                                 className='main-side-nav'
                                 trigger={null}
                                 collapsible
-                                collapsed={collapsed}
+                                collapsed={collapsedNav}
                             >
                                 <Menu
                                     className='side-nav-menu'
@@ -213,8 +221,25 @@ const LayoutWrapper = () => {
                                     onClick={onClick}
                                 />
                             </Sider>
+                            <Drawer
+                                className='main-side-drawer'
+                                placement="left"
+                                onClose={onClose}
+                                visible={collapsedDrawer}
+                                closable={false}
+                                width="250px"
+                                key="key"
+                            >
+                                <Menu
+                                    className='side-nav-menu'
+                                    mode="inline"
+                                    defaultSelectedKeys={[current]}
+                                    items={items}
+                                    onClick={onClick}
+                                />
+                            </Drawer>
                             <Content
-                                className={collapsed ? 'closed' : 'opened'}
+                                className={collapsedNav || collapsedDrawer ? 'closed' : 'opened'}
                             >
                                 <Row>
                                     <Col span={12}>

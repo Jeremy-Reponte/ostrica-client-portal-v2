@@ -5,7 +5,7 @@ import { UserOutlined } from '@ant-design/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
-const { Title } = Typography;
+const { Title, Text } = Typography;
 const { TabPane } = Tabs;
 
 
@@ -36,17 +36,15 @@ export const Login: FC = () => {
     return (
         <>
             <div className="unauth-background"></div>
-            <div className='container col-12 unauth-content'>
-                <Row className='animate__animated animate__fadeIn animate__slow'>
-                    <Col offset={7} span={10}>
-                        <Col span={24} className='mb-4'>
-                            <div className="grid justify-items-stretch">
-                                <div className="justify-self-center">
-                                    <img src="../assets/ostrica-logo-white.png" width="200" alt="ostrica" className='site-logo' />
-                                </div>
-                            </div>
-                        </Col>
-                        <Card className='login-card'>
+            <div className="grid place-content-center h-screen unauth-content px-5 lg:px-0 animate__animated animate__fadeIn animate__slow">
+                <div className="grid justify-items-stretch mb-5 pt-[130px] lg:pt-0">
+                    <div className="justify-self-center">
+                        <img src="../assets/ostrica-logo-white.png" width="200" alt="ostrica" className='site-logo' />
+                    </div>
+                </div>
+                <Card className="rounded-lg py-5 lg:py-16">
+                    <div className="grid grid-cols-1 gap-4">
+                        <div className="place-content-center lg:w-[30rem] px-5">
                             <Row>
                                 <Col span={24} className='mb-5'>
                                     <div className="grid justify-items-stretch">
@@ -56,7 +54,6 @@ export const Login: FC = () => {
                                     </div>
                                 </Col>
                             </Row>
-
                             <Form
                                 name="basic"
                                 initialValues={{ remember: true }}
@@ -132,78 +129,76 @@ export const Login: FC = () => {
                                     </Row>
                                 </Form.Item>
                             </Form>
-                        </Card>
-                        <Col span={24} className='mt-4 mb-10'>
-                            <div className="grid justify-items-stretch">
-                                <div className="justify-self-center">
-                                    <a href='https://tinyurl.com/2tmp7t32' target="_blank" rel="noreferrer">
-                                        <Button className='ostrica-color-4-background' >
-                                            BinckBank <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='ml-3' />
-                                        </Button>
-                                    </a>
-                                </div>
-                            </div>
-                        </Col>
-                        <hr className='hr-divider' />
-                        <p className='text-white text-center'>© Copyright 2022. All Rights Reserved.</p>
-                    </Col>
-                </Row>
-                <Modal
-                    title="Wilt u geld bijstorten?"
-                    centered
-                    visible={modalVisible}
-                    cancelText="Sluiten"
-                    zIndex={1000}
-                    closable={false}
-                    footer={[
-                        <Button key="back" onClick={handleCancel} className='secondary-background'>
-                            <span className="text-white">Sluiten</span>
-                        </Button>,
-                    ]}
-                >
-                    <p>
-                        Als u een beleggingsrekening bij ons heeft en u wilt geld bijstorten dan is dat op elk gewenst moment mogelijk.
-                        U kunt uw geld overmaken naar de depotbank waar uw portefeuille in bewaring is.
-                        Onderstaand vindt u stortingsinstructies per depotbank:
-                    </p>
-                    <Tabs onChange={onChange} type="card">
-                        <TabPane tab="BinckBank" key="1">
-                            <Title level={5}>Heeft u een rekening bij BinckBank?</Title>
-                            <p>
-                                Gelieve uw bank opdracht te geven het te beleggen bedrag over te boeken naar uw eigen
-                                IBAN-nummer bij BinckBank onder vermelding van uw zescijferig effectenrekeningnummer en uw naam.
-                            </p>
-                            <p>
-                                Mocht u uw IBAN- nummer nier (meer) weten, neem dan contact op met onze ClientServiceDesk (csd@ostrica.nl).
-                            </p>
-                            <p>Indien hier door uw bank naar gevraagd wordt, kunt u de BIC-code: <b>BINKNL21</b> vermelden.</p>
-                            <p>
-                                <b>Belangrijke informatie:</b> Omdat het IBAN-nummer gerelateerd is aan uw effectenrekeningnummer, zal
-                                uw bank automatisch melden dat dit IBAN-nummer niet in combinatie met uw naam herkend wordt. Het is
-                                <b> correct</b> dat u deze melding krijgt, echter als u het bovenstaande IBAN-nummer heeft ingevoerd, kunt u
-                                deze melding <b>negeren</b> en uw betaalopdracht voltooien.
-                            </p>
-                        </TabPane>
-                        <TabPane tab="IQ-EQ Trust" key="2">
-                            <Title level={5}>Heeft u een rekening bij IQ-EQ Trust?</Title>
-                            <p>
-                                U kunt geld overmaken naar het IBAN nummer van IQ-EQ Trust onder vermelding van uw zescijferig
-                                effectenrekeningnummer en uw naam.
-                            </p>
-                            <Title level={5}>IBAN</Title>
-                            <p>NL89 ABNA 0 876084528</p>
-                            <Title level={5}>BIC nummer</Title>
-                            <p>ABNANL2A</p>
-                            <p>
-                                <b>Let op:</b> Overboekingen naar IQ-EQ Trust wordt eenmaal per maand verwerkt. Heeft u een rekening
-                                bij IQ-EQ Trust dan dient uw storting uiterlijk op de 12e van de maand te zijn ontvangen om nog
-                                in de desbetreffende maand belegd te kunnen worden. Stortingen die binnenkomen na de 12e van de
-                                maand worden in de opvolgende maand belegd.
-                            </p>
-                        </TabPane>
-                    </Tabs>
-                </Modal>
+                        </div>
+                    </div>
+                </Card>
+                <div className="grid justify-items-stretch mt-5 pb-10 lg:pb-0">
+                    <div className="justify-self-center">
+                        <a href='https://tinyurl.com/2tmp7t32' target="_blank" rel="noreferrer">
+                            <Button className='ostrica-color-4-background' >
+                                BinckBank <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='ml-3' />
+                            </Button>
+                        </a>
+                    </div>
+                    <hr className='hr-divider' />
+                    <p className='text-white text-center'>© Copyright 2022. All Rights Reserved.</p>
+                </div>
             </div>
+            <Modal
+                title="Wilt u geld bijstorten?"
+                centered
+                visible={modalVisible}
+                cancelText="Sluiten"
+                zIndex={1000}
+                closable={false}
+                footer={[
+                    <Button key="back" onClick={handleCancel} className='secondary-background'>
+                        <span className="text-white">Sluiten</span>
+                    </Button>,
+                ]}
+            >
+                <p>
+                    Als u een beleggingsrekening bij ons heeft en u wilt geld bijstorten dan is dat op elk gewenst moment mogelijk.
+                    U kunt uw geld overmaken naar de depotbank waar uw portefeuille in bewaring is.
+                    Onderstaand vindt u stortingsinstructies per depotbank:
+                </p>
+                <Tabs onChange={onChange} type="card">
+                    <TabPane tab="BinckBank" key="1">
+                        <Title level={5}>Heeft u een rekening bij BinckBank?</Title>
+                        <p>
+                            Gelieve uw bank opdracht te geven het te beleggen bedrag over te boeken naar uw eigen
+                            IBAN-nummer bij BinckBank onder vermelding van uw zescijferig effectenrekeningnummer en uw naam.
+                        </p>
+                        <p>
+                            Mocht u uw IBAN- nummer nier (meer) weten, neem dan contact op met onze ClientServiceDesk (csd@ostrica.nl).
+                        </p>
+                        <p>Indien hier door uw bank naar gevraagd wordt, kunt u de BIC-code: <b>BINKNL21</b> vermelden.</p>
+                        <p>
+                            <b>Belangrijke informatie:</b> Omdat het IBAN-nummer gerelateerd is aan uw effectenrekeningnummer, zal
+                            uw bank automatisch melden dat dit IBAN-nummer niet in combinatie met uw naam herkend wordt. Het is
+                            <b> correct</b> dat u deze melding krijgt, echter als u het bovenstaande IBAN-nummer heeft ingevoerd, kunt u
+                            deze melding <b>negeren</b> en uw betaalopdracht voltooien.
+                        </p>
+                    </TabPane>
+                    <TabPane tab="IQ-EQ Trust" key="2">
+                        <Title level={5}>Heeft u een rekening bij IQ-EQ Trust?</Title>
+                        <p>
+                            U kunt geld overmaken naar het IBAN nummer van IQ-EQ Trust onder vermelding van uw zescijferig
+                            effectenrekeningnummer en uw naam.
+                        </p>
+                        <Title level={5}>IBAN</Title>
+                        <p>NL89 ABNA 0 876084528</p>
+                        <Title level={5}>BIC nummer</Title>
+                        <p>ABNANL2A</p>
+                        <p>
+                            <b>Let op:</b> Overboekingen naar IQ-EQ Trust wordt eenmaal per maand verwerkt. Heeft u een rekening
+                            bij IQ-EQ Trust dan dient uw storting uiterlijk op de 12e van de maand te zijn ontvangen om nog
+                            in de desbetreffende maand belegd te kunnen worden. Stortingen die binnenkomen na de 12e van de
+                            maand worden in de opvolgende maand belegd.
+                        </p>
+                    </TabPane>
+                </Tabs>
+            </Modal>
         </>
     );
 }

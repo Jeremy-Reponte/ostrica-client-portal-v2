@@ -20,10 +20,10 @@ const { Panel } = Collapse;
 export const Portefeuille: FC = () => {
     return (
         <div className='portefeuille-container'>
-            <Row>
-                <Col span={11} className='pr-2'>
-                    <Row>
-                        <Col span={24} className='pb-4' data-aos="fade-down">
+            <Row gutter={16}>
+                <Col lg={12} sm={24} xs={24}>
+                    <Row gutter={[16, 16]}>
+                        <Col span={24} data-aos="fade-down">
                             <Collapse
                                 bordered={false}
                                 expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
@@ -34,7 +34,7 @@ export const Portefeuille: FC = () => {
                                 </Panel>
                             </Collapse>
                         </Col>
-                        <Col span={24} className='pb-4' data-aos="fade-up">
+                        <Col span={24} data-aos="fade-up">
                             <Card bordered={false}>
                                 <Row>
                                     <Col span={4} className='self-center'>
@@ -55,7 +55,7 @@ export const Portefeuille: FC = () => {
                                 </Row>
                             </Card>
                         </Col>
-                        <Col span={24} className='pb-4' data-aos="fade-up">
+                        <Col span={24} data-aos="fade-up">
                             <Card title="Cliënt Portefeuille" bordered={false}>
                                 <Row>
                                     <Col span={12}>
@@ -113,21 +113,21 @@ export const Portefeuille: FC = () => {
                                 </Row>
                             </Card>
                         </Col>
-                        <Col span={24} className='pb-4' data-aos="fade-up">
+                        <Col span={24} data-aos="fade-up">
                             <Card title="Asset Allocatie" bordered={false}>
                                 <DummyChart1 />
                             </Card>
                         </Col>
                     </Row>
                 </Col>
-                <Col span={13} className='pl-2' data-aos="fade-left">
-                    <Row>
-                        <Col span={24} className='pb-4'>
+                <Col lg={12} sm={24} xs={24} data-aos="fade-left">
+                    <Row gutter={[16, 16]}>
+                        <Col span={24} >
                             <Card title="Portefeuille Details" bordered={false}>
                                 <DummyTable1 />
                             </Card>
                         </Col>
-                        <Col span={24} className='pb-4' data-aos="fade-left">
+                        <Col span={24} data-aos="fade-left">
                             <Card title="Maandoverzicht" bordered={false}>
                                 <DummyTable1 />
                             </Card>

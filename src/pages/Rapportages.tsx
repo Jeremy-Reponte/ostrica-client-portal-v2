@@ -8,8 +8,8 @@ import {
 export const Rapportages: FC = () => {
     return (
         <div className='rapportages-container'>
-            <Row>
-                <Col span={12} className='pr-2' data-aos="fade-right">
+            <Row gutter={[16,16]}>
+                <Col lg={12} sm={24} xs={24} data-aos="fade-right">
                     <Card title="Ostrica Rapportages" bordered={false}>
                         <p>
                             Elk kwartaal geven wij online onze visie met betrekking tot de actuele
@@ -28,7 +28,7 @@ export const Rapportages: FC = () => {
                         </div>
                     </Card>
                 </Col>
-                <Col span={12} className='pl-2' data-aos="fade-up">
+                <Col lg={12} sm={24} xs={24} data-aos="fade-up">
                     <Card title="Uw Jaaropgave" bordered={false}>
                         <p>
                             Wanneer Binckbank of IQEQ uw depotbank voor uw Ostrica beleggingen is,

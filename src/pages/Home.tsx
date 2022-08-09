@@ -37,8 +37,8 @@ export const Home: FC = () => {
     return (
         <div className='home-container'>
             <Row gutter={16}>
-                <Col span={13}>
-                    <Row gutter={[16,16]}>
+                <Col lg={12} sm={24} xs={24}>
+                    <Row gutter={[16, 16]}>
                         <Col span={24} data-aos="fade-up">
                             <Card bordered={false} className='skyblue-background'>
                                 <h5>2e kwartaalrapportage staat klaar!</h5>
@@ -168,8 +168,8 @@ export const Home: FC = () => {
                         </Col>
                     </Row>
                 </Col>
-                <Col span={11}>
-                    <Row gutter={[16,16]}>
+                <Col lg={12} sm={24} xs={24}>
+                    <Row gutter={[16, 16]}>
                         <Col span={24} data-aos="fade-left">
                             <Card bordered={false} className='primary-bg'>
                                 <Space direction="vertical" size="small">

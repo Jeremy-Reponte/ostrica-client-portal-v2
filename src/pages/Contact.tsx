@@ -9,8 +9,8 @@ const { TextArea } = Input;
 export const Contact: FC = () => {
     return (
         <div className='contact-container'>
-            <Row>
-                <Col span={12} className='pr-2' data-aos="fade-right">
+            <Row gutter={[16,16]}>
+                <Col lg={12} sm={24} xs={24} data-aos="fade-right">
                     <Card title="Contactformulier" bordered={false}>
                         <p>
                             Uw informatie wordt automatisch aangevuld door het systeem. Vult u alstublieft
@@ -67,9 +67,9 @@ export const Contact: FC = () => {
                         </Form>
                     </Card>
                 </Col>
-                <Col span={12} className='pl-2'>
-                    <Row gutter={16}>
-                        <Col className='pb-4' span={12} data-aos="fade-left">
+                <Col lg={12} sm={24} xs={24}>
+                    <Row gutter={[16, 16]}>
+                        <Col lg={12} xs={24} data-aos="fade-left">
                             <Card bordered={false}>
                                 <Row>
                                     <Col span={6} className='self-center'>
@@ -86,7 +86,7 @@ export const Contact: FC = () => {
 
                             </Card>
                         </Col>
-                        <Col span={12} data-aos="fade-left">
+                        <Col lg={12} xs={24} data-aos="fade-left">
                             <Card bordered={false}>
                                 <Row>
                                     <Col span={6} className='self-center'>
@@ -103,7 +103,7 @@ export const Contact: FC = () => {
 
                             </Card>
                         </Col>
-                        <Col span={12} data-aos="fade-left">
+                        <Col lg={12} xs={24} data-aos="fade-left">
                             <Card bordered={false}>
                                 <Row>
                                     <Col span={6} className='self-center'>
@@ -119,7 +119,7 @@ export const Contact: FC = () => {
 
                             </Card>
                         </Col>
-                        <Col span={24} className='mt-4' data-aos="fade-left">
+                        <Col span={24} data-aos="fade-left">
                             <Card bordered={false}>
                                 <Row>
                                     <Col span={3} className='self-center'>
@@ -135,7 +135,6 @@ export const Contact: FC = () => {
                                         <Button block className='primary-bg'>PDF Download</Button>
                                     </Col>
                                 </Row>
-
                             </Card>
                         </Col>
                     </Row>

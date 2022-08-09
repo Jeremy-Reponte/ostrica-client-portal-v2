@@ -22,17 +22,15 @@ export const LoginWachtwoord: FC = () => {
     return (
         <>
             <div className="unauth-background"></div>
-            <div className='container col-12 unauth-content'>
-                <Row className='animate__animated animate__fadeIn animate__slow'>
-                    <Col offset={7} span={10}>
-                        <Col span={24} className='mb-4'>
-                            <div className="grid justify-items-stretch">
-                                <div className="justify-self-center">
-                                    <img src="../assets/ostrica-logo-2-white.png" width="200" alt="ostrica" className='site-logo' />
-                                </div>
-                            </div>
-                        </Col>
-                        <Card className='login-card'>
+            <div className="grid place-content-center h-screen unauth-content px-5 lg:px-0 animate__animated animate__fadeIn animate__slow">
+                <div className="grid justify-items-stretch mb-5 pt-[130px] lg:pt-0">
+                    <div className="justify-self-center">
+                        <img src="../assets/ostrica-logo-2-white.png" width="200" alt="ostrica" className='site-logo' />
+                    </div>
+                </div>
+                <Card className="rounded-lg py-5 lg:py-16">
+                    <div className="grid grid-cols-1 gap-4">
+                        <div className="place-content-center lg:w-[30rem] px-5">
                             <Row>
                                 <Col span={24} className='mb-5'>
                                     <div className="grid justify-items-stretch">
@@ -111,10 +109,12 @@ export const LoginWachtwoord: FC = () => {
                                     </Row>
                                 </Form.Item>
                             </Form>
-                        </Card>
-                        <p className='text-white text-center mt-4'>© Copyright 2022. All Rights Reserved.</p>
-                    </Col>
-                </Row>
+                        </div>
+                    </div>
+                </Card>
+                <div className="grid justify-items-stretch mt-5 pb-10 lg:pb-0">
+                    <p className='text-white text-center mt-4'>© Copyright 2022. All Rights Reserved.</p>
+                </div>
             </div>
         </>
     );

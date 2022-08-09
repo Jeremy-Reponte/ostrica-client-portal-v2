@@ -8,8 +8,8 @@ import {
 export const Wachtwoord: FC = () => {
     return (
         <div className='wachtwoord-container'>
-            <Row>
-                <Col span={12} className='pr-2' data-aos="fade-right">
+            <Row gutter={[16, 16]}>
+                <Col lg={12} xs={24} data-aos="fade-right">
                     <Card title="Vul hier uw nieuwe wachtwoord in" bordered={false}>
                         <Form
                             name="basic"
@@ -48,7 +48,7 @@ export const Wachtwoord: FC = () => {
                         </Form>
                     </Card>
                 </Col>
-                <Col span={12} className='pl-2' data-aos="fade-left">
+                <Col lg={12} xs={24} data-aos="fade-left">
                     <Row gutter={24}>
                         <Col span={24} className='mb-4'>
                             <Card bordered={false}>

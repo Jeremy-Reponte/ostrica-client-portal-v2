@@ -9,7 +9,7 @@ const { Panel } = Collapse;
 
 export const Nieuws: FC = () => {
     return (
-        <div className='nieuws-container px-20 pt-20' data-aos="fade-right">
+        <div className='nieuws-container pt-10' data-aos="fade-right">
             <Collapse
                 accordion
                 ghost

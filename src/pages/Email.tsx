@@ -9,8 +9,8 @@ import {
 export const Email: FC = () => {
     return (
         <div className='email-container'>
-            <Row>
-                <Col span={12} className='pr-2' data-aos="fade-right">
+            <Row gutter={[16, 16]}>
+                <Col lg={12} xs={24} data-aos="fade-right">
                     <Card title="Vul hier uw nieuwe emailadres in" bordered={false}>
                         <Form
                             name="basic"
@@ -49,7 +49,7 @@ export const Email: FC = () => {
                         </Form>
                     </Card>
                 </Col>
-                <Col span={12} className='pl-2'>
+                <Col lg={12} xs={24}>
                     <Row gutter={24}>
                         <Col span={24} className='mb-4' data-aos="fade-left">
                             <Card bordered={false}>
