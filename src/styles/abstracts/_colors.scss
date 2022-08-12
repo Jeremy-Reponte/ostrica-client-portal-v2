@@ -16,6 +16,11 @@ $black-color: #000000;
 
 .white-bg {
   background-color: $white-color !important;
+  border-color: $white-color !important;
+  color: $black-color;
+  &.hove {
+    color: $black-color;
+  }
 }
 
 .secondary-background {

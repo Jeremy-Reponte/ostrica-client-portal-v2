@@ -157,7 +157,7 @@ const DummyTable2: React.FC = () => {
     },
   ];
 
-  return <Table size={'middle'} bordered columns={columns} dataSource={data} />;
+  return <Table size={'middle'} scroll={{ x: '20vw' }} bordered columns={columns} dataSource={data} />;
 };
 
 export default DummyTable2;

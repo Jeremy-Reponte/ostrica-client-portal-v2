@@ -1,3 +1,6 @@
+@import 'antd/dist/antd.css';
+@import "@ant-design/flowchart/dist/index.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +15,7 @@
 @import "./styles/Nieuws.scss";
 @import "./styles/Login.scss";
 @import 'animate.css';
+@import "./styles/themes/tailwind.scss";
 
 .container {
   position: fixed;

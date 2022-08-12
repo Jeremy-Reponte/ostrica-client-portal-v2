@@ -39,34 +39,28 @@ export const Home: FC = () => {
             <Row gutter={16}>
                 <Col lg={12} sm={24} xs={24}>
                     <Row gutter={[16, 16]}>
-                        <Col span={24} data-aos="fade-up">
+                        <Col lg={24} xs={24} data-aos="fade-up">
                             <Card bordered={false} className='skyblue-background'>
                                 <h5>2e kwartaalrapportage staat klaar!</h5>
                                 <p>
-                                    Het is halverwege het jaar en de wereld lijkt in
-                                    brand te staan. Het voorzichtige optimisme dat nog
-                                    zichtbaar was in het eerste kwartaal, heeft plaatsgemaakt
-                                    voor brandjes blussen als nieuwe strategie van veel bedrijven.
-                                    Echter kun je een trap oplopen of aflopen. Wij kiezen ervoor om
-                                    met een positieve blik vooruit te kijken en de treden naar boven
-                                    te bewandelen. In dit tweede kwartaalrapport kunt u lezen dat wij
-                                    het zowel met onze aandelenfondsen als obligatiefondsen beter hebben
-                                    gedaan dan vergelijkbare fondsen. Veel leesplezier! Mocht u vragen
-                                    hebben dan horen wij dit graag.
+                                    Het aanbrengen van nieuwe relaties via u als bestaande relatie waarderen wij zeer.
+                                    In het kader van ons 25 jarig jubileum jaar hebben wij hier een speciale actie aan
+                                    gekoppeld. Meer informatie en de geldende actievoorwaarden voor deze campagne kunt u
+                                    onder 'download pdf' terugvinden.
                                 </p>
-                                <Space>
-                                    <Button>Download PDF</Button>
-                                    <Button>meer actueel nieuws</Button>
-                                </Space>
+                                <div className='pt-3 grid grid-cols-1 lg:grid-cols-3 gap-2'>
+                                    <Button className='white-bg'>Download PDF</Button>
+                                    <Button className='white-bg'>Meer actueel nieuws</Button>
+                                </div>
                             </Card>
                         </Col>
                         <Col span={24} data-aos="fade-up">
                             <Card bordered={false}>
-                                <Row>
-                                    <Col span={6} className='self-center'>
+                                <Row gutter={[16, 16]}>
+                                    <Col lg={6} xs={24} className='self-center hidden lg:block'>
                                         <InfoCircleOutlined className='font-size-100 primary-font' />
                                     </Col>
-                                    <Col span={18}>
+                                    <Col lg={18} xs={24}>
                                         <h5>Welkom op onze vernieuwde persoonlijke omgeving</h5>
                                         <p>
                                             U bevindt zich in het afgeschermde deel van de Ostrica website.
@@ -83,13 +77,13 @@ export const Home: FC = () => {
                         <Col span={24} data-aos="fade-up">
                             <Card bordered={false}>
                                 <Row>
-                                    <Col span={6} className='self-center'>
+                                    <Col lg={6} className='self-center hidden lg:block'>
                                         <EuroCircleFilled className='font-orange font-size-100' />
                                     </Col>
-                                    <Col span={18}>
+                                    <Col lg={18} xs={24}>
                                         <h3>Uw vermogen</h3>
                                         <p>2.624.072 per 13 Jul 2022</p>
-                                        <div className="grid justify-items-stretch">
+                                        <div className="grid justify-items-stretch pt-3">
                                             <Button type="primary" className='green-background justify-self-end'>Ga naar mijn Portefeuille</Button>
                                         </div>
                                     </Col>
@@ -190,12 +184,12 @@ export const Home: FC = () => {
                         <Col span={24} data-aos="fade-left">
                             <Card bordered={false}>
                                 <Row>
-                                    <Col span={4} className='self-center'>
+                                    <Col lg={4} className='self-center hidden lg:block'>
                                         <GlobalOutlined className='font-size-50 primary-font' />
                                     </Col>
-                                    <Col span={20}>
+                                    <Col lg={20} xs={24}>
                                         <h3>Ga naar onze Expertise pagina voor ons meest recente blog</h3>
-                                        <div className="grid justify-items-stretch">
+                                        <div className="grid justify-items-stretch pt-3">
                                             <Button type="primary" className='green-background justify-self-end'>Expertise pagina</Button>
                                         </div>
                                     </Col>
@@ -205,12 +199,12 @@ export const Home: FC = () => {
                         <Col span={24} data-aos="fade-left">
                             <Card bordered={false}>
                                 <Row>
-                                    <Col span={4} className='self-center'>
+                                    <Col lg={4} className='self-center hidden lg:block'>
                                         <FilePdfOutlined className='font-size-50 primary-font' />
                                     </Col>
-                                    <Col span={20}>
+                                    <Col lg={20} xs={24}>
                                         <h3>Bekijk de laatste Rapportages</h3>
-                                        <div className="grid justify-items-stretch">
+                                        <div className="grid justify-items-stretch pt-3">
                                             <Button type="primary" className='green-background justify-self-end'>Ga naar mijn Rapportages</Button>
                                         </div>
                                     </Col>

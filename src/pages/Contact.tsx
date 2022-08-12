@@ -122,16 +122,16 @@ export const Contact: FC = () => {
                         <Col span={24} data-aos="fade-left">
                             <Card bordered={false}>
                                 <Row>
-                                    <Col span={3} className='self-center'>
+                                    <Col lg={3} xs={6} className='self-center'>
                                         <FilePdfOutlined className='text-5xl primary-font' />
                                     </Col>
-                                    <Col span={21}>
+                                    <Col lg={21} xs={18}>
                                         <Space direction="vertical" size={0} className='flex'>
                                             <p className='text-xs m-1'>Routebeschrijving</p>
                                             <p className='text-xs m-1'>Google maps</p>
                                         </Space>
                                     </Col>
-                                    <Col span={24} className='mt-5'>
+                                    <Col lg={24} className='mt-5'>
                                         <Button block className='primary-bg'>PDF Download</Button>
                                     </Col>
                                 </Row>

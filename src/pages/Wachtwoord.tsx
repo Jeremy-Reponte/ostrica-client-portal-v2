@@ -53,7 +53,7 @@ export const Wachtwoord: FC = () => {
                         <Col span={24} className='mb-4'>
                             <Card bordered={false}>
                                 <Row>
-                                    <Col span={4} className='self-center'>
+                                    <Col span={4} className='self-center hidden lg:block'>
                                         <ExclamationCircleFilled className='text-6xl primary-font' />
                                     </Col>
                                     <Col span={20}>
@@ -68,7 +68,7 @@ export const Wachtwoord: FC = () => {
                         <Col span={24}>
                             <Card bordered={false} data-aos="fade-left">
                                 <Row>
-                                    <Col span={4} className='self-center'>
+                                    <Col span={4} className='self-center hidden lg:block'>
                                         <KeyOutlined className='text-6xl primary-font' />
                                     </Col>
                                     <Col span={20}>

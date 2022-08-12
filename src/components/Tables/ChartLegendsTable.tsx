@@ -61,6 +61,6 @@ const data: DataType[] = [
     }
 ];
 
-const ChartLegendsTable: React.FC = () => <Table pagination={false} size={'middle'} columns={columns} dataSource={data} />;
+const ChartLegendsTable: React.FC = () => <Table pagination={false} size={'middle'} scroll={{ x: '20vw' }} columns={columns} dataSource={data} />;
 
 export default ChartLegendsTable;

@@ -14,7 +14,7 @@ export const Formulieren: FC = () => {
                 <Col lg={12} xs={24} data-aos="fade-right">
                     <Card bordered={false}>
                         <Row>
-                            <Col span={3} className='self-center'>
+                            <Col span={3} className='self-center hidden lg:block'>
                                 <FilePdfOutlined className='text-5xl primary-font' />
                             </Col>
                             <Col span={21} className='self-center'>
@@ -29,7 +29,7 @@ export const Formulieren: FC = () => {
                 <Col lg={12} xs={24} data-aos="fade-left">
                     <Card bordered={false}>
                         <Row>
-                            <Col span={3} className='self-center'>
+                            <Col span={3} className='self-center hidden lg:block'>
                                 <FilePdfOutlined className='text-5xl primary-font' />
                             </Col>
                             <Col span={21} className='self-center'>
@@ -43,9 +43,7 @@ export const Formulieren: FC = () => {
                 </Col>
                 <Col
                     lg={12} xs={24}
-                    data-aos="zoom-in"
-                    data-aos-duration="1000"
-                    data-aos-anchor-placement="center-center"
+                    className="animate__animated animate__fadeIn animate__slow"
                 >
                     <Card bordered={false} hoverable>
                         <Row>

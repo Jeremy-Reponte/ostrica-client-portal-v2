@@ -20,7 +20,7 @@ const { Panel } = Collapse;
 export const Portefeuille: FC = () => {
     return (
         <div className='portefeuille-container'>
-            <Row gutter={16}>
+            <Row gutter={[16, 16]}>
                 <Col lg={12} sm={24} xs={24}>
                     <Row gutter={[16, 16]}>
                         <Col span={24} data-aos="fade-down">
@@ -37,16 +37,16 @@ export const Portefeuille: FC = () => {
                         <Col span={24} data-aos="fade-up">
                             <Card bordered={false}>
                                 <Row>
-                                    <Col span={4} className='self-center'>
+                                    <Col lg={4} className='self-center hidden lg:block'>
                                         <FilePdfOutlined className='font-size-50 primary-font' />
                                     </Col>
-                                    <Col span={20} className='self-center'>
+                                    <Col lg={20} xs={24} className='self-center'>
                                         <Row>
-                                            <Col span={12}>
+                                            <Col lg={12} xs={24}>
                                                 <h3>Print View (PDF Versie)</h3>
                                             </Col>
-                                            <Col span={12}>
-                                                <div className="grid justify-items-stretch">
+                                            <Col lg={12} xs={24}>
+                                                <div className="grid justify-items-stretch pt-3">
                                                     <Button type="primary" className='green-background justify-self-end'>Download</Button>
                                                 </div>
                                             </Col>

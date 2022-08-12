@@ -54,7 +54,7 @@ export const Email: FC = () => {
                         <Col span={24} className='mb-4' data-aos="fade-left">
                             <Card bordered={false}>
                                 <Row>
-                                    <Col span={4} className='self-center'>
+                                    <Col span={4} className='self-center hidden lg:block'>
                                         <MailFilled className='text-5xl primary-font' />
                                     </Col>
                                     <Col span={20}>
@@ -69,7 +69,7 @@ export const Email: FC = () => {
                         <Col span={24} className='mb-4' data-aos="fade-left">
                             <Card bordered={false}>
                                 <Row>
-                                    <Col span={4} className='self-center'>
+                                    <Col span={4} className='self-center hidden lg:block'>
                                         <CheckCircleFilled className='text-5xl primary-font' />
                                     </Col>
                                     <Col span={20}>
@@ -84,7 +84,7 @@ export const Email: FC = () => {
                         <Col span={24} data-aos="fade-left">
                             <Card bordered={false}>
                                 <Row>
-                                    <Col span={4} className='self-center'>
+                                    <Col span={4} className='self-center hidden lg:block'>
                                         <FlagFilled className='text-5xl primary-font' />
                                     </Col>
                                     <Col span={20}>

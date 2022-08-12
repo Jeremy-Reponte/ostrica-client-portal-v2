@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { Layout, Menu, Breadcrumb, Row, Col, Avatar, Modal, Badge, Button, Space, Card, Drawer } from 'antd';
+import { Layout, Menu, Breadcrumb, Row, Col, Avatar, Modal, Badge, Button, Space, Card, Drawer, BackTop } from 'antd';
 import type { MenuProps } from 'antd';
 import {
     MenuFoldOutlined,
@@ -253,6 +253,7 @@ const LayoutWrapper = () => {
                                     </Col>
                                 </Row>
                                 <div className="site-layout-background">
+                                    <BackTop />
                                     <Outlet />
                                 </div>
                             </Content>

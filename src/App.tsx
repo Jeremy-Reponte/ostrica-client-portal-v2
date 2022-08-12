@@ -1,7 +1,5 @@
 import React, { FC } from 'react';
 import './App.scss';
-import 'antd/dist/antd.css';
-import "@ant-design/flowchart/dist/index.css";
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Login } from './pages/Login';
