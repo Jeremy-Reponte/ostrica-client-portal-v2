@@ -1,20 +1,20 @@
 import React, { FC } from 'react';
-import './App.scss';
+import './assets/scss/index.scss';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import { Home } from './pages/Home';
-import { Login } from './pages/Login';
-import { Portefeuille } from './pages/Portefeuille';
-import { Rapportages } from './pages/Rapportages';
-import { ErrorPage } from './pages/ErrorPage';
-import LayoutWrapper from './components/LayoutWrapper';
-import { Nieuws } from './pages/Nieuws';
-import { Contact } from './pages/Contact';
-import { Formulieren } from './pages/Formulieren';
-import { Wachtwoord } from './pages/Wachtwoord';
-import { Email } from './pages/Email';
-import { Inbox } from './pages/Inbox';
-import { LoginGebruikersnaam } from './pages/LoginGebruikersnaam';
-import { LoginWachtwoord } from './pages/LoginWachtwoord';
+import LayoutWrapper from './layouts/LayoutWrapper';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Portefeuille from './pages/Portefeuille';
+import Rapportages from './pages/Rapportages';
+import ErrorPage from './pages/ErrorPage';
+import Nieuws from './pages/Nieuws';
+import Contact from './pages/Contact';
+import Formulieren from './pages/Formulieren';
+import Wachtwoord from './pages/Wachtwoord';
+import Email from './pages/Email';
+import Inbox from './pages/Inbox';
+import LoginGebruikersnaam from './pages/LoginGebruikersnaam';
+import LoginWachtwoord from './pages/LoginWachtwoord';
 
 const App: FC = () => {
   return (

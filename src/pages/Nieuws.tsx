@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { Button, Col, Collapse, Row } from 'antd';
 import {
     CaretRightOutlined,
@@ -7,7 +6,7 @@ import {
 
 const { Panel } = Collapse;
 
-export const Nieuws: FC = () => {
+const Nieuws = () => {
     return (
         <div className='nieuws-container pt-10' data-aos="fade-right">
             <Collapse
@@ -77,3 +76,5 @@ export const Nieuws: FC = () => {
         </div>
     );
 }
+
+export default Nieuws;

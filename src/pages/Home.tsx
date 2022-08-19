@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import {
     Button,
     Card,
@@ -20,20 +19,20 @@ import {
     GlobalOutlined,
     FilePdfOutlined
 } from '@ant-design/icons';
-import DummyChart1 from '../components/Charts/DummyChart1';
-import DummyChart2 from '../components/Charts/DummyChart2';
-import DummyChart3 from '../components/Charts/DummyChart3';
-import DummyChart4 from '../components/Charts/DummyChart4';
-import DummyTable1 from '../components/Tables/DummyTable1';
-import DummyTable2 from '../components/Tables/DummyTable2';
-import ChartLegendsTable from '../components/Tables/ChartLegendsTable';
+import DummyChart1 from '../components/charts/DummyChart1';
+import DummyChart2 from '../components/charts/DummyChart2';
+import DummyChart3 from '../components/charts/DummyChart3';
+import DummyChart4 from '../components/charts/DummyChart4';
+import DummyTable1 from '../components/tables/DummyTable1';
+import DummyTable2 from '../components/tables/DummyTable2';
+import ChartLegendsTable from '../components/tables/ChartLegendsTable';
 
 const { TabPane } = Tabs;
 const { Option } = Select;
 const { Panel } = Collapse;
 const { Title } = Typography;
 
-export const Home: FC = () => {
+const Home = () => {
     return (
         <div className='home-container'>
             <Row gutter={16}>
@@ -231,3 +230,5 @@ export const Home: FC = () => {
         </div>
     );
 }
+
+export default Home;

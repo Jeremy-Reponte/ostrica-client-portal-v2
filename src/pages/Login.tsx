@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button, Card, Col, Form, Input, Modal, Row, Tabs, Typography } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
@@ -10,7 +10,7 @@ const { TabPane } = Tabs;
 
 
 
-export const Login: FC = () => {
+const Login = () => {
     const navigate = useNavigate();
     const [modalVisible, setModalVisible] = useState(false);
 
@@ -202,3 +202,5 @@ export const Login: FC = () => {
         </>
     );
 }
+
+export default Login;

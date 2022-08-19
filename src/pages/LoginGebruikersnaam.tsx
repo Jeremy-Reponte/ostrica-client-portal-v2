@@ -1,11 +1,10 @@
-import { FC } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button, Card, Col, Form, Input, Row, Typography } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
 const { Title } = Typography;
 
-export const LoginGebruikersnaam: FC = () => {
+const LoginGebruikersnaam = () => {
     const navigate = useNavigate();
 
     const onFinish = (values: any) => {
@@ -106,3 +105,5 @@ export const LoginGebruikersnaam: FC = () => {
         </>
     );
 }
+
+export default LoginGebruikersnaam;

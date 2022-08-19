@@ -1,11 +1,10 @@
-import { FC } from 'react';
 import {
     Card,
     Col,
     Row
 } from 'antd';
 
-export const Rapportages: FC = () => {
+const Rapportages = () => {
     return (
         <div className='rapportages-container'>
             <Row gutter={[16,16]}>
@@ -46,3 +45,5 @@ export const Rapportages: FC = () => {
         </div>
     );
 }
+
+export default Rapportages;

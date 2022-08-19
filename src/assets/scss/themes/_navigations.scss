@@ -25,33 +25,6 @@ $secondary-color: #ff6a00;
   }
 }
 
-.main-side-nav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-  .side-nav-menu {
-    margin-top: 50px;
-  }
-  @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    display: none;
-  }
-}
-
-.main-side-drawer {
-  .ant-drawer-body {
-    padding: 0 !important;
-  }
-}
-
-.site-layout-background {
-  min-height: 360px;
-}
-
 .ant-layout-sider,
 .ant-layout-sider-trigger,
 .ant-menu {
@@ -70,23 +43,82 @@ $secondary-color: #ff6a00;
   }
 }
 
+@mixin nav_link_effects {
+  &.active {
+    background-color: $secondary-color;
+    .ant-space-item {
+      color: #fff;
+    }
+    &:hover {
+      background-color: $secondary-color;
+      .ant-space-item {
+        color: #fff;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: rgb($secondary-color, 0.1);
+    .ant-space-item {
+      color: $primary-color;
+    }
+  }
+}
+
+.main-side-nav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  margin-top: 64px;
+  .side-nav-menu {
+    padding: 15px;
+    display: flex;
+    @include nav_link_effects;
+  }
+  .side-nav-menu-collapse {
+    .ant-space-horizontal {
+      .ant-space-item {
+        padding-left: 14px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    display: none;
+  }
+}
+
+.main-side-drawer {
+  .ant-drawer-body {
+    padding: 0 !important;
+    .side-nav-menu {
+      padding: 15px;
+      display: flex;
+      @include nav_link_effects;
+    }
+  }
+}
+
+.ant-popover-inner-content{
+  .side-nav-menu {
+    padding: 10px;
+    display: flex;
+    @include nav_link_effects;
+  }
+}
+
+.ant-popover-placement-rightTop {
+  top: 324px !important;
+}
+
 .ant-menu-light .ant-menu-item:hover,
 .ant-menu-light .ant-menu-item-active,
 .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
 .ant-menu-light .ant-menu-submenu-active,
 .ant-menu-light .ant-menu-submenu-title:hover {
-  color: $primary-color;
-}
-
-.ant-menu-item-selected {
-  background-color: $secondary-color !important;
-  color: #fff !important;
-  .ant-menu-title-content a {
-    color: #fff !important;
-  }
-}
-
-.ant-menu-submenu-selected {
   color: $primary-color;
 }
 

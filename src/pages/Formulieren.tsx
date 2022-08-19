@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { Button, Col, Card, Row, Typography, Space } from 'antd';
 import {
     FilePdfOutlined,
@@ -7,7 +6,7 @@ import {
 
 const { Title } = Typography;
 
-export const Formulieren: FC = () => {
+const Formulieren = () => {
     return (
         <div className='formulieren-container'>
             <Row gutter={[16, 16]}>
@@ -66,3 +65,5 @@ export const Formulieren: FC = () => {
         </div>
     );
 }
+
+export default Formulieren;

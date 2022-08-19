@@ -1,11 +1,10 @@
-import { FC } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button, Card, Col, Form, Input, Row, Typography } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
 const { Title } = Typography;
 
-export const LoginWachtwoord: FC = () => {
+const LoginWachtwoord = () => {
     const navigate = useNavigate();
 
     const onFinish = (values: any) => {
@@ -119,3 +118,5 @@ export const LoginWachtwoord: FC = () => {
         </>
     );
 }
+
+export default LoginWachtwoord;

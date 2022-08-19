@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import {
     Button,
     Card,
@@ -11,13 +10,13 @@ import {
     CaretRightOutlined,
     FilePdfOutlined
 } from '@ant-design/icons';
-import DummyChart1 from '../components/Charts/DummyChart1';
-import DummyTable1 from '../components/Tables/DummyTable1';
-import ChartLegendsTable from '../components/Tables/ChartLegendsTable';
+import DummyChart1 from '../components/charts/DummyChart1';
+import DummyTable1 from '../components/tables/DummyTable1';
+import ChartLegendsTable from '../components/tables/ChartLegendsTable';
 
 const { Panel } = Collapse;
 
-export const Portefeuille: FC = () => {
+const Portefeuille = () => {
     return (
         <div className='portefeuille-container'>
             <Row gutter={[16, 16]}>
@@ -138,3 +137,5 @@ export const Portefeuille: FC = () => {
         </div>
     );
 }
+
+export default Portefeuille;

@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { Button, Col, Card, Row, Form, Input, Space } from 'antd';
 import {
     MailFilled,
@@ -6,7 +5,7 @@ import {
     FlagFilled
 } from '@ant-design/icons';
 
-export const Email: FC = () => {
+const Email = () => {
     return (
         <div className='email-container'>
             <Row gutter={[16, 16]}>
@@ -102,3 +101,5 @@ export const Email: FC = () => {
         </div>
     );
 }
+
+export default Email;

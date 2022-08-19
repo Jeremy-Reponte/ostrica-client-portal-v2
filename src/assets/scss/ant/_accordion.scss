@@ -1,0 +1,29 @@
+.ant-collapse-header {
+  background-color: #51514e;
+  .ant-collapse-expand-icon,
+  .ant-collapse-header-text {
+    color: #fff;
+  }
+}
+
+.collapse-ghost-navigation {
+  border: none !important;
+  .ant-collapse-header {
+    background: none !important;
+    padding: 15px 16px !important;
+    .ant-collapse-expand-icon,
+    span {
+      color: #51514e !important;
+    }
+  }
+  .ant-collapse-content, .ant-collapse-item {
+    border: none !important;
+    background: white !important;
+    .ant-collapse-content-box{
+        padding: 0 !important;
+        .side-nav-menu .ant-space-horizontal{
+            padding-left: 19px !important;
+        }
+    }
+  }
+}

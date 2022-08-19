@@ -5,17 +5,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "./styles/abstracts/colors.scss";
-@import "./styles/abstracts/fonts.scss";
-@import "./styles/ant/accordion.scss";
-@import "./styles/ant/theme.scss";
-@import "./styles/themes/dropdownSettings.scss";
-@import "./styles/Home.scss";
-@import "./styles/Portefeuille.scss";
-@import "./styles/Nieuws.scss";
-@import "./styles/Login.scss";
+//abstracts
+@import "abstracts/colors";
+@import "abstracts/fonts";
+
+//ant
+@import "ant/accordion";
+
+//pages
+@import "pages/home";
+@import "pages/portefeuille";
+@import "pages/nieuws";
+@import "pages/login";
+@import "pages/layoutWrapper";
+
 @import 'animate.css';
-@import "./styles/themes/tailwind.scss";
+
+//theme
+@import "ant/theme";
+@import "themes/dropdownSettings";
+@import "themes/tailwind";
+@import "themes/navigations";
 
 .container {
   position: fixed;

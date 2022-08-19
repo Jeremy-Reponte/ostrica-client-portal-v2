@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { Button, Col, Card, Row, Form, Input, Space } from 'antd';
 import {
     FilePdfOutlined
@@ -6,7 +5,7 @@ import {
 
 const { TextArea } = Input;
 
-export const Contact: FC = () => {
+const Contact = () => {
     return (
         <div className='contact-container'>
             <Row gutter={[16,16]}>
@@ -143,3 +142,5 @@ export const Contact: FC = () => {
         </div>
     );
 }
+
+export default Contact;

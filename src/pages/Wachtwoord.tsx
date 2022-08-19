@@ -1,11 +1,10 @@
-import { FC } from 'react';
 import { Button, Col, Card, Row, Form, Input, Space } from 'antd';
 import {
     ExclamationCircleFilled,
     KeyOutlined
 } from '@ant-design/icons';
 
-export const Wachtwoord: FC = () => {
+const Wachtwoord = () => {
     return (
         <div className='wachtwoord-container'>
             <Row gutter={[16, 16]}>
@@ -86,3 +85,5 @@ export const Wachtwoord: FC = () => {
         </div>
     );
 }
+
+export default Wachtwoord;
